@@ -1,0 +1,60 @@
+{
+  "extensions": {
+    "recommended": [
+      "curl",
+      "dom",
+      "exif",
+      "fileinfo",
+      "gd",
+      "imagick",
+      "intl",
+      "zip"
+    ],
+    "required": [
+      "json",
+      "mbstring",
+      "mysqli",
+      "openssl",
+      "pcre",
+      "xml"
+    ]
+  },
+  "functions": {
+    "required": [
+      "curl_init",
+      "openssl_random_pseudo_bytes"
+    ]
+  },
+  "ini": {
+    "max_execution_time": {
+      "min": 120,
+      "severity": "warn",
+      "type": "seconds"
+    },
+    "max_input_vars": {
+      "min": 1000,
+      "severity": "warn",
+      "type": "number"
+    },
+    "memory_limit": {
+      "min": "256M",
+      "severity": "fail",
+      "type": "bytes"
+    },
+    "post_max_size": {
+      "min": "32M",
+      "severity": "warn",
+      "type": "bytes"
+    },
+    "upload_max_filesize": {
+      "min": "32M",
+      "severity": "warn",
+      "type": "bytes"
+    }
+  },
+  "name": "WordPress 6.x hosting requirements",
+  "php_version": "7.4",
+  "writable_paths": [
+    "/tmp"
+  ]
+}
